@@ -1,0 +1,1686 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ADND Group impulsa e-commerce en Argentina con consultoría estratégica, almacenamiento, fulfillment, logística, desarrollo web e integraciones para escalar operaciones B2B.">
+    <meta name="keywords" content="ADND Group, e-commerce Argentina, fulfillment Argentina, logística AMBA, almacenamiento e-commerce, consultoría e-commerce, desarrollo web e-commerce, Mercado Libre Partner, Tienda Nube Partner, pre-fulfillment, última milla, B2B digital">
+    <meta name="author" content="ADND Group">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="theme-color" content="#000000">
+    <meta name="color-scheme" content="dark">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta name="application-name" content="ADND Group">
+    <meta name="apple-mobile-web-app-title" content="ADND Group">
+    <meta property="og:locale" content="es_AR">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="ADND Group">
+    <meta property="og:title" content="ADND Group | E-commerce integral, fulfillment y logística en Argentina">
+    <meta property="og:description" content="Aceleradora de negocios digitales para e-commerce: consultoría, almacenamiento, fulfillment, logística, desarrollo web e integraciones para escalar operaciones B2B.">
+    <meta property="og:image" content="images/logo_blue.png">
+    <meta property="og:image:alt" content="Logo de ADND Group">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="ADND Group | E-commerce integral, fulfillment y logística en Argentina">
+    <meta name="twitter:description" content="Consultoría, almacenamiento, fulfillment, logística, desarrollo web e integraciones para escalar e-commerce en Argentina.">
+    <meta name="twitter:image" content="images/logo_blue.png">
+    <title>ADND Group | E-commerce integral, fulfillment y logística en Argentina</title>
+    <link rel="icon" type="image/png" href="images/logo_blue.png">
+    <link rel="apple-touch-icon" href="images/logo_blue.png">
+    <link rel="canonical" href="./">
+    <link rel="alternate" hreflang="es-ar" href="./">
+    <link rel="alternate" hreflang="es" href="./">
+    <link rel="alternate" hreflang="x-default" href="./">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "ADND Group",
+        "alternateName": "Aceleradora de Negocios Digitales",
+        "description": "Aceleradora de negocios digitales para e-commerce con consultoría, almacenamiento, fulfillment, logística, desarrollo web e integraciones.",
+        "email": "ezequieladndgroup@gmail.com",
+        "telephone": "+54 11 3232-0206",
+        "logo": "images/logo_blue.png",
+        "image": "images/logo_blue.png",
+        "areaServed": ["AR", "AMBA"],
+        "knowsAbout": [
+            "e-commerce",
+            "fulfillment",
+            "logística",
+            "almacenamiento",
+            "consultoría digital",
+            "desarrollo web",
+            "integraciones"
+        ],
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "customer service",
+            "telephone": "+54 11 3232-0206",
+            "email": "ezequieladndgroup@gmail.com",
+            "areaServed": "AR",
+            "availableLanguage": ["es"]
+        }
+    }
+    </script>
+    
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --bg: #000000;
+            --surface: rgba(255, 255, 255, 0.06);
+            --surface-strong: rgba(255, 255, 255, 0.1);
+            --border: rgba(255, 255, 255, 0.14);
+            --text: #ffffff;
+            --muted: rgba(255, 255, 255, 0.74);
+            --brand: #0090FF;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 5.5rem;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--text);
+            background:
+                radial-gradient(circle at top left, rgba(0, 144, 255, 0.22), transparent 28%),
+                radial-gradient(circle at top right, rgba(0, 144, 255, 0.14), transparent 24%),
+                linear-gradient(180deg, #070707 0%, #000000 55%, #060606 100%);
+            overflow-x: hidden;
+            min-width: 320px;
+        }
+
+        body.menu-open {
+            overflow: hidden;
+        }
+
+        body::before {
+            content: '';
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            background-image: linear-gradient(rgba(255, 255, 255, 0.025) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
+            background-size: 64px 64px;
+            mask-image: radial-gradient(circle at center, black 52%, transparent 100%);
+            opacity: 0.5;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 700;
+            color: var(--text);
+        }
+        
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        img {
+            display: block;
+            max-width: 100%;
+        }
+
+        section {
+            position: relative;
+        }
+
+        section:not(.hero-bg) {
+            padding-block: clamp(4rem, 7vw, 6rem) !important;
+            padding-inline: clamp(1rem, 3vw, 2rem) !important;
+        }
+
+        section > div {
+            width: 100%;
+        }
+
+        input,
+        select,
+        textarea {
+            background: rgba(255, 255, 255, 0.05);
+            color: #ffffff;
+            border-color: rgba(255, 255, 255, 0.14);
+            border-radius: 1rem;
+            backdrop-filter: blur(18px);
+        }
+
+        input::placeholder,
+        textarea::placeholder {
+            color: rgba(255, 255, 255, 0.45);
+        }
+
+        input:focus,
+        select:focus,
+        textarea:focus {
+            outline: none;
+            border-color: var(--brand);
+            box-shadow: 0 0 0 3px rgba(0, 144, 255, 0.18);
+        }
+
+        .brand-blue { color: var(--brand); }
+        .bg-brand-blue { background-color: var(--brand); }
+        .border-brand-blue { border-color: var(--brand); }
+
+        .glass-panel {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            backdrop-filter: blur(22px);
+            box-shadow: 0 24px 80px rgba(0, 0, 0, 0.35);
+        }
+
+        .glass-panel-strong {
+            background: var(--surface-strong);
+            border: 1px solid var(--border);
+            backdrop-filter: blur(22px);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+        }
+
+        .feature-panel {
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.03));
+            border: 1px solid rgba(255, 255, 255, 0.16);
+            border-radius: 1.25rem;
+            backdrop-filter: blur(22px);
+            box-shadow: 0 18px 52px rgba(0, 0, 0, 0.32);
+        }
+        
+        .hero-bg {
+            background:
+                radial-gradient(circle at 20% 15%, rgba(0, 144, 255, 0.34), transparent 20%),
+                radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.08), transparent 18%),
+                linear-gradient(135deg, #050505 0%, #000000 58%, #0a0a0a 100%);
+            position: relative;
+            overflow: hidden;
+            min-height: min(100svh, 900px);
+            padding-block: clamp(6.5rem, 12vh, 9rem) clamp(4rem, 9vh, 7rem);
+        }
+
+        .hero-video-placeholder {
+            position: absolute;
+            inset: 0;
+            z-index: 0;
+            pointer-events: none;
+            background:
+                linear-gradient(90deg, rgba(0, 0, 0, 0.82) 0%, rgba(0, 0, 0, 0.52) 44%, rgba(0, 0, 0, 0.84) 100%),
+                radial-gradient(circle at 72% 36%, rgba(0, 144, 255, 0.28), transparent 27%),
+                radial-gradient(circle at 26% 62%, rgba(255, 255, 255, 0.08), transparent 24%),
+                linear-gradient(135deg, rgba(0, 144, 255, 0.18), rgba(255, 255, 255, 0.03) 48%, rgba(0, 144, 255, 0.1));
+        }
+
+        .hero-video-placeholder::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background:
+                linear-gradient(rgba(255, 255, 255, 0.045) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255, 255, 255, 0.045) 1px, transparent 1px);
+            background-size: 72px 72px;
+            mask-image: linear-gradient(90deg, transparent 0%, black 24%, black 78%, transparent 100%);
+            opacity: 0.38;
+        }
+
+        .hero-video-placeholder::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: clamp(2rem, 10vw, 10rem);
+            width: clamp(12rem, 28vw, 26rem);
+            aspect-ratio: 16 / 10;
+            border: 1px solid rgba(255, 255, 255, 0.13);
+            border-radius: 1.5rem;
+            background:
+                radial-gradient(circle at center, rgba(0, 144, 255, 0.32), transparent 22%),
+                linear-gradient(135deg, rgba(255, 255, 255, 0.14), rgba(255, 255, 255, 0.03));
+            box-shadow: 0 30px 90px rgba(0, 0, 0, 0.38);
+            transform: translateY(-44%) rotate(-3deg);
+            opacity: 0.5;
+        }
+        
+        .hero-bg::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: 
+                radial-gradient(circle at 20% 50%, rgba(0, 144, 255, 0.12) 0%, transparent 42%),
+                radial-gradient(circle at 80% 80%, rgba(255, 255, 255, 0.05) 0%, transparent 38%);
+            animation: float 16s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 10;
+            width: min(100%, 58rem);
+        }
+
+        .hero-logo-text {
+            font-size: clamp(2.75rem, 11vw, 4.5rem) !important;
+            line-height: 0.95 !important;
+            letter-spacing: -0.02em;
+        }
+
+        .hero-content h1 {
+            font-size: clamp(2.4rem, 8vw, 4rem) !important;
+            line-height: 1.02 !important;
+            text-wrap: balance;
+        }
+
+        .hero-content > p {
+            text-wrap: balance;
+        }
+
+        .hero-content > p:first-of-type {
+            font-size: clamp(1.08rem, 3vw, 1.5rem) !important;
+        }
+
+        .hero-content > p:nth-of-type(2) {
+            font-size: clamp(1rem, 2.25vw, 1.125rem) !important;
+            max-width: 45rem;
+        }
+        
+        .btn-primary {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            max-width: 100%;
+            min-height: 3.25rem;
+            padding: 0.9rem 1.35rem;
+            border-radius: 9999px;
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            background: linear-gradient(135deg, var(--brand), #006fd1);
+            color: white;
+            font-weight: 700;
+            line-height: 1.2;
+            text-align: center;
+            white-space: normal;
+            overflow-wrap: anywhere;
+            transition: transform 220ms ease, box-shadow 220ms ease, border-color 220ms ease;
+            box-shadow: 0 14px 30px rgba(0, 144, 255, 0.24);
+        }
+
+        .btn-primary i,
+        .btn-secondary i {
+            flex: 0 0 auto;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 20px 42px rgba(0, 144, 255, 0.32);
+        }
+
+        .btn-secondary {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            max-width: 100%;
+            min-height: 3.25rem;
+            padding: 0.9rem 1.35rem;
+            border-radius: 9999px;
+            border: 1px solid rgba(255, 255, 255, 0.22);
+            background: rgba(255, 255, 255, 0.04);
+            color: white;
+            font-weight: 700;
+            line-height: 1.2;
+            text-align: center;
+            white-space: normal;
+            overflow-wrap: anywhere;
+            backdrop-filter: blur(18px);
+            transition: transform 220ms ease, background-color 220ms ease, border-color 220ms ease;
+        }
+
+        .btn-secondary:hover {
+            transform: translateY(-2px);
+            background: rgba(255, 255, 255, 0.08);
+            border-color: rgba(0, 144, 255, 0.4);
+        }
+
+        .service-card {
+            height: 100%;
+            padding: clamp(1.25rem, 3vw, 2rem);
+            border-radius: 1.25rem;
+            border: 1px solid var(--border);
+            background: var(--surface);
+            backdrop-filter: blur(22px);
+            transition: transform 220ms ease, border-color 220ms ease, background-color 220ms ease;
+            box-shadow: 0 16px 44px rgba(0, 0, 0, 0.22);
+            overflow-wrap: anywhere;
+        }
+
+        .service-card:hover {
+            transform: translateY(-6px);
+            border-color: rgba(0, 144, 255, 0.42);
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        .service-icon {
+            width: clamp(3.25rem, 7vw, 4rem);
+            height: clamp(3.25rem, 7vw, 4rem);
+            border-radius: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: clamp(1.15rem, 2.5vw, 1.35rem);
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, var(--brand), rgba(0, 144, 255, 0.55));
+            color: white;
+            box-shadow: 0 14px 28px rgba(0, 144, 255, 0.24);
+        }
+
+        .service-card h3 {
+            line-height: 1.15;
+            text-wrap: balance;
+        }
+
+        .service-card p,
+        .service-card li {
+            line-height: 1.6;
+        }
+        
+        .fade-in {
+            animation: fadeIn 0.8s ease-in;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .sticky-cta {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 40;
+            animation: bounce 2s ease-in-out infinite;
+        }
+        
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        .trust-signal {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: rgba(255, 255, 255, 0.92);
+            min-width: 0;
+        }
+        
+        .pillar-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: clamp(1rem, 2.4vw, 2rem);
+        }
+        
+        nav {
+            background: rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(18px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+        }
+
+        nav .nav-inner {
+            min-height: 4.75rem;
+        }
+
+        .mobile-menu-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 2.75rem;
+            height: 2.75rem;
+            border-radius: 9999px;
+            border: 1px solid rgba(255, 255, 255, 0.14);
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .mobile-menu-button::before {
+            content: '';
+            width: 1.1rem;
+            height: 0.78rem;
+            background:
+                linear-gradient(#fff 0 0) top / 100% 2px no-repeat,
+                linear-gradient(#fff 0 0) center / 100% 2px no-repeat,
+                linear-gradient(#fff 0 0) bottom / 100% 2px no-repeat;
+        }
+
+        .mobile-menu-button i {
+            display: none;
+        }
+
+        #mobileMenu {
+            top: 4.75rem;
+            height: calc(100dvh - 4.75rem);
+        }
+
+        #mobileMenu .mobile-menu-panel {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+            padding: 1rem;
+            height: 100%;
+        }
+
+        #mobileMenu a {
+            border-radius: 1rem;
+            padding: 0.95rem 1rem;
+            background: rgba(255, 255, 255, 0.04);
+        }
+
+        #mobileMenu .btn-primary {
+            margin-top: 0.25rem;
+            padding-inline: 1rem;
+        }
+
+        .section-heading {
+            margin-bottom: clamp(2.5rem, 5vw, 4rem) !important;
+        }
+
+        .section-heading h2 {
+            font-size: clamp(2rem, 5.5vw, 3.25rem) !important;
+            line-height: 1.05;
+            text-wrap: balance;
+        }
+
+        .section-heading p {
+            font-size: clamp(1rem, 2.2vw, 1.2rem) !important;
+            line-height: 1.6;
+            text-wrap: balance;
+        }
+
+        .trust-grid,
+        .integration-grid,
+        .advantages-grid,
+        .testimonials-grid,
+        .contact-grid,
+        .footer-grid {
+            display: grid !important;
+            grid-template-columns: 1fr;
+            gap: clamp(1rem, 2.5vw, 2rem);
+        }
+
+        .contact-item {
+            min-width: 0;
+        }
+
+        .contact-item > div:last-child {
+            min-width: 0;
+        }
+
+        .contact-item p,
+        .contact-item a {
+            overflow-wrap: anywhere;
+        }
+
+        .integration-logo {
+            width: clamp(5.25rem, 12vw, 7.5rem);
+            height: clamp(5.25rem, 12vw, 7.5rem);
+            object-fit: contain;
+            margin-inline: auto;
+            filter: drop-shadow(0 16px 28px rgba(0, 0, 0, 0.28));
+        }
+
+        .integration-logo.lightdata-logo {
+            width: clamp(6rem, 13vw, 8rem);
+        }
+
+        .sticky-cta {
+            width: clamp(3.25rem, 12vw, 4rem) !important;
+            height: clamp(3.25rem, 12vw, 4rem) !important;
+        }
+
+        .scroll-indicator {
+            display: inline-flex;
+            width: auto;
+        }
+
+        footer li,
+        footer a,
+        footer p {
+            overflow-wrap: anywhere;
+        }
+        
+        .modal-hidden {
+            display: none;
+        }
+        
+        .modal-visible {
+            display: flex;
+        }
+
+        .text-gray-900,
+        .text-gray-800 {
+            color: #ffffff !important;
+        }
+
+        .text-gray-700 {
+            color: rgba(255, 255, 255, 0.88) !important;
+        }
+
+        .text-gray-600,
+        .text-gray-500,
+        .text-gray-400 {
+            color: rgba(255, 255, 255, 0.72) !important;
+        }
+
+        .text-blue-100,
+        .text-blue-200 {
+            color: rgba(208, 232, 255, 0.98) !important;
+        }
+
+        .bg-white,
+        .bg-gray-50,
+        .bg-gray-100,
+        .bg-gray-200 {
+            background-color: rgba(255, 255, 255, 0.03) !important;
+        }
+
+        .bg-gray-900 {
+            background-color: rgba(0, 0, 0, 0.88) !important;
+        }
+
+        .border-gray-300,
+        .border-gray-200,
+        .border-gray-800 {
+            border-color: rgba(255, 255, 255, 0.14) !important;
+        }
+
+        .bg-blue-50,
+        .bg-blue-100 {
+            background-color: rgba(0, 144, 255, 0.08) !important;
+        }
+
+        .text-yellow-400 {
+            color: var(--brand) !important;
+        }
+
+        .bg-green-500,
+        .bg-green-600 {
+            background-color: var(--brand) !important;
+        }
+
+        .hover\:bg-green-600:hover {
+            background-color: #0077d6 !important;
+        }
+
+        .from-purple-600 {
+            --tw-gradient-from: #0090FF !important;
+            --tw-gradient-to: rgba(0, 144, 255, 0) !important;
+            --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
+        }
+
+        .via-blue-500 {
+            --tw-gradient-stops: var(--tw-gradient-from), #0090FF, var(--tw-gradient-to) !important;
+        }
+
+        .to-blue-600,
+        .to-blue-500 {
+            --tw-gradient-to: #006fd1 !important;
+        }
+
+        @media (min-width: 480px) {
+            .trust-grid,
+            .advantages-grid,
+            .footer-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+            .hero-content .btn-primary,
+            .hero-content .btn-secondary {
+                width: auto;
+                min-width: 13rem;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .pillar-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+            .integration-grid,
+            .testimonials-grid {
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+            }
+
+            .contact-grid {
+                grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+            }
+
+            .footer-grid {
+                grid-template-columns: 1.25fr repeat(3, minmax(0, 1fr));
+            }
+
+            .trust-grid {
+                grid-template-columns: repeat(4, minmax(0, 1fr));
+            }
+
+            .trust-signal {
+                justify-content: center;
+                text-align: center;
+            }
+
+            .hero-bg {
+                min-height: min(100svh, 880px);
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .pillar-grid {
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+            }
+
+            .advantages-grid {
+                grid-template-columns: repeat(5, minmax(0, 1fr));
+                gap: 1.25rem;
+            }
+
+            .advantages-grid .service-card {
+                padding: 1.35rem;
+            }
+
+            .advantages-grid .service-icon {
+                width: 3.35rem;
+                height: 3.35rem;
+            }
+        }
+
+        @media (min-width: 1280px) {
+            .advantages-grid {
+                gap: 1.5rem;
+            }
+
+            .advantages-grid .service-card {
+                padding: 1.5rem;
+            }
+        }
+
+        @media (max-width: 767px) {
+            nav .nav-inner {
+                min-height: 4.5rem;
+                height: auto;
+            }
+
+            #mobileMenu {
+                top: 4.5rem;
+                height: calc(100dvh - 4.5rem);
+            }
+
+            .hero-bg {
+                min-height: auto;
+                padding-top: 6rem;
+                padding-bottom: 3.75rem;
+            }
+
+            .hero-video-placeholder::before {
+                background-size: 48px 48px;
+                opacity: 0.26;
+            }
+
+            .hero-video-placeholder::after {
+                top: auto;
+                right: -3.5rem;
+                bottom: 3.5rem;
+                width: 16rem;
+                opacity: 0.22;
+                transform: rotate(-8deg);
+            }
+
+            .hero-content {
+                max-width: 100%;
+            }
+
+            .hero-content .glass-panel-strong {
+                padding: clamp(1rem, 4vw, 1.25rem);
+                border-radius: 1.25rem;
+            }
+
+            .hero-content .flex.flex-col {
+                margin-bottom: 2.75rem;
+            }
+
+            .hero-content .btn-primary,
+            .hero-content .btn-secondary {
+                width: 100%;
+                max-width: 23rem;
+                margin-inline: auto;
+            }
+
+            .hero-content .grid.grid-cols-1 {
+                gap: 0.85rem;
+                padding-top: 1.5rem;
+            }
+
+            .trust-signal {
+                justify-content: flex-start;
+                text-align: left;
+                padding: 0.85rem 0.95rem;
+                border-radius: 1rem;
+                background: rgba(255, 255, 255, 0.045);
+            }
+
+            .trust-signal i {
+                font-size: 1.15rem !important;
+            }
+
+            .hero-bg .absolute.bottom-8 {
+                display: none;
+            }
+
+            .pillar-grid {
+                grid-template-columns: 1fr;
+                gap: 1.25rem;
+            }
+
+            .service-card:hover,
+            .btn-primary:hover,
+            .btn-secondary:hover {
+                transform: none;
+            }
+
+            .service-card h3.text-2xl {
+                font-size: 1.35rem !important;
+            }
+
+            .feature-panel {
+                padding: 1.25rem;
+                border-radius: 1.1rem;
+            }
+
+            .feature-panel.min-h-32 {
+                min-height: 7.5rem;
+            }
+
+            .feature-panel.min-h-96 {
+                min-height: 15rem;
+            }
+
+            .sticky-cta {
+                bottom: max(0.9rem, env(safe-area-inset-bottom));
+                right: max(0.9rem, env(safe-area-inset-right));
+                opacity: 0;
+                visibility: hidden;
+                pointer-events: none;
+                transform: translateY(0.75rem) scale(0.96);
+            }
+
+            .sticky-cta i {
+                font-size: 1.45rem;
+            }
+
+            .sticky-cta.is-visible {
+                opacity: 1;
+                visibility: visible;
+                pointer-events: auto;
+                transform: translateY(0) scale(1);
+            }
+
+            .grid.md\:grid-cols-2.gap-12,
+            .grid.md\:grid-cols-3.gap-8,
+            .grid.md\:grid-cols-4.gap-8,
+            .grid.md\:grid-cols-2.gap-12.items-center {
+                gap: 2rem;
+            }
+
+            .text-center.mb-16 {
+                margin-bottom: 3rem;
+            }
+
+            .contact-item {
+                gap: 1rem;
+            }
+
+            .contact-item .h-14.w-14 {
+                width: 3rem;
+                height: 3rem;
+            }
+
+            footer {
+                padding-bottom: 5.5rem !important;
+            }
+        }
+
+        @media (max-width: 480px) {
+            section:not(.hero-bg) {
+                padding-block: 3.5rem !important;
+            }
+
+            .hero-logo-text {
+                font-size: clamp(1.95rem, 10.5vw, 2.55rem) !important;
+            }
+
+            .hero-content h1 {
+                font-size: clamp(2rem, 12vw, 2.85rem) !important;
+            }
+
+            .hero-content .mb-8 {
+                margin-bottom: 1.5rem;
+            }
+
+            .section-heading {
+                margin-bottom: 2.25rem !important;
+            }
+
+            .feature-panel {
+                padding: 1rem;
+            }
+
+            .sticky-cta {
+                bottom: 12px;
+                right: 12px;
+            }
+
+            .contact-item {
+                align-items: flex-start;
+            }
+        }
+
+        @media (max-width: 380px) {
+            .hero-logo-text {
+                font-size: 2.1rem;
+            }
+
+            .btn-primary,
+            .btn-secondary {
+                padding-inline: 1rem;
+                font-size: 0.92rem !important;
+            }
+
+            .service-card {
+                padding: 1.15rem;
+            }
+        }
+    </style>
+</head>
+<body class="scroll-smooth">
+    <!-- Navbar -->
+    <nav class="fixed w-full top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="nav-inner flex justify-between items-center h-20">
+                <div class="flex items-center gap-3">
+                    <img src="images/logo_white.png" alt="ADND Group" class="h-11 w-11 rounded-xl object-contain">
+                    <span class="font-bold text-xl hidden sm:inline tracking-[0.22em]">ADND GROUP</span>
+                </div>
+                
+                <div class="hidden md:flex items-center gap-8">
+                    <a href="#servicios" class="font-medium hover:text-brand-blue transition">Servicios</a>
+                    <a href="#nosotros" class="font-medium hover:text-brand-blue transition">Nosotros</a>
+                    <a href="#integraciones" class="font-medium hover:text-brand-blue transition">Integraciones</a>
+                    <a href="#contacto" class="btn-primary">Contacto</a>
+                </div>
+                
+                <div class="md:hidden">
+                    <button class="mobile-menu-button text-gray-700" type="button" onclick="toggleMobileMenu()" aria-controls="mobileMenu" aria-expanded="false" aria-label="Abrir menu">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="hidden fixed inset-0 top-20 bg-black/95 z-40 md:hidden backdrop-blur-xl">
+        <div class="mobile-menu-panel glass-panel">
+            <a href="#servicios" class="block font-medium hover:text-brand-blue transition">Servicios</a>
+            <a href="#nosotros" class="block font-medium hover:text-brand-blue transition">Nosotros</a>
+            <a href="#integraciones" class="block font-medium hover:text-brand-blue transition">Integraciones</a>
+            <a href="#contacto" class="block btn-primary w-full text-center">Contacto</a>
+        </div>
+    </div>
+
+    <!-- ====== HERO SECTION ====== -->
+    <section class="hero-bg min-h-screen flex items-center justify-center pt-20 px-4 sm:px-6 lg:px-8">
+        <!-- Placeholder listo para reemplazar por un video de fondo. -->
+        <div class="hero-video-placeholder" aria-hidden="true"></div>
+        <div class="hero-content text-center max-w-4xl mx-auto">
+            <!-- Logo grande -->
+            <div class="mb-8 animate-fade-in">
+                <div class="inline-block glass-panel-strong p-6 rounded-[1.75rem]">
+                    <div class="hero-logo-text text-6xl sm:text-7xl font-black">
+                        <span class="text-white">ADND</span>
+                        <span class="brand-blue"> GROUP</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Título principal -->
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-white mb-4 leading-tight">
+                Aceleradora de Negocios Digitales
+            </h1>
+            
+            <p class="text-xl sm:text-2xl text-blue-100 mb-8 font-semibold">
+                Una forma distinta de hacer e-commerce
+            </p>
+            
+            <!-- Subtítulo -->
+            <p class="text-lg text-gray-100 mb-12 max-w-2xl mx-auto leading-relaxed">
+                Solución integral B2B que acompaña tu negocio desde el primer día hasta la última milla. Consultoría, almacenamiento, fulfillment, logística y desarrollo web en un solo lugar.
+            </p>
+            
+            <!-- CTAs principales -->
+            <div class="flex flex-col sm:flex-row gap-4 justify-center mb-16">
+                <button onclick="scrollToContacto()" class="btn-primary">
+                    <i class="fas fa-rocket mr-2"></i> Quiero escalar mi e-commerce
+                </button>
+                <a href="#servicios" class="btn-secondary">
+                    <i class="fas fa-layer-group mr-2"></i> Ver servicios
+                </a>
+            </div>
+            
+            <!-- Trust signals -->
+            <div class="trust-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 pt-12 border-t border-white border-opacity-20">
+                <div class="trust-signal justify-center">
+                    <i class="fas fa-check-circle text-2xl"></i>
+                    <span>Mercado Libre Partner</span>
+                </div>
+                <div class="trust-signal justify-center">
+                    <i class="fas fa-check-circle text-2xl"></i>
+                    <span>Tienda Nube Partner</span>
+                </div>
+                <div class="trust-signal justify-center">
+                    <i class="fas fa-award text-2xl"></i>
+                    <span>+25 años experiencia</span>
+                </div>
+                <div class="trust-signal justify-center">
+                    <i class="fas fa-truck text-2xl"></i>
+                    <span>+60 vehículos propios</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll indicator -->
+        <div class="scroll-indicator absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <i class="fas fa-chevron-down text-white text-2xl"></i>
+        </div>
+    </section>
+
+    <!-- ====== SECCIÓN CONÓCENOS ====== -->
+    <section id="nosotros" class="py-20 px-4 sm:px-6 lg:px-8 bg-black">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <!-- Contenido -->
+                <div class="fade-in">
+                    <span class="inline-block px-4 py-2 bg-blue-100 text-brand-blue font-bold rounded-full text-sm mb-6">
+                        CONÓCENOS
+                    </span>
+                    <h2 class="text-4xl lg:text-5xl font-black mb-6 text-gray-900">
+                        Somos la primera empresa en ofrecer una solución <span class="brand-blue">100% integral</span>
+                    </h2>
+                    
+                    <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                        Con más de 25 años de experiencia en el sector, ADND Group es pionera en ofrecer una solución integral para el e-commerce que va mucho más allá de los servicios tradicionales.
+                    </p>
+                    
+                    <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+                        Desde la <strong>consultoría estratégica</strong> hasta la <strong>última milla de distribución</strong>, pasando por almacenamiento de clase mundial, fulfillment ágil y desarrollo web de alto rendimiento, nos encargamos de toda tu operación. Todo bajo el mismo techo.
+                    </p>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-4">
+                            <div class="flex-shrink-0">
+                                <div class="flex items-center justify-center h-10 w-10 rounded-lg bg-brand-blue text-white">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-gray-900">Consultoría + Almacenamiento</h3>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="flex-shrink-0">
+                                <div class="flex items-center justify-center h-10 w-10 rounded-lg bg-brand-blue text-white">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-gray-900">Fulfillment + Logística</h3>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="flex-shrink-0">
+                                <div class="flex items-center justify-center h-10 w-10 rounded-lg bg-brand-blue text-white">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-gray-900">Marketing + Desarrollo Web</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Imagen -->
+                <div class="fade-in">
+                    <div class="relative">
+                        <div class="absolute inset-0 bg-gradient-to-r from-brand-blue to-blue-600 rounded-2xl transform rotate-6"></div>
+                        <div class="relative feature-panel p-8 flex items-center justify-center min-h-96 overflow-hidden">
+                            <div class="absolute inset-0 bg-gradient-to-br from-black/20 via-transparent to-brand-blue/15"></div>
+                            <div class="relative text-center">
+                                <div class="inline-flex items-center justify-center w-20 h-20 rounded-3xl bg-brand-blue/15 border border-brand-blue/30 mb-5">
+                                    <i class="fas fa-building text-5xl brand-blue"></i>
+                                </div>
+                                <p class="text-white font-bold text-lg">Infraestructura de clase mundial</p>
+                                <p class="text-gray-400 text-sm mt-2 max-w-xs mx-auto">Depósito AAA en Capital Federal con tecnología 24/7</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== PILARES / SERVICIOS ====== -->
+    <section id="servicios" class="py-20 px-4 sm:px-6 lg:px-8 bg-black">
+        <div class="max-w-7xl mx-auto">
+            <div class="section-heading text-center mb-16">
+                <span class="inline-block px-4 py-2 bg-blue-100 text-brand-blue font-bold rounded-full text-sm mb-4">
+                    NUESTROS SERVICIOS
+                </span>
+                <h2 class="text-4xl lg:text-5xl font-black mb-6 text-gray-900">
+                    6 Pilares de Excelencia
+                </h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Una solución completa para cada etapa de tu negocio e-commerce
+                </p>
+            </div>
+            
+            <div class="pillar-grid">
+                <!-- Pilar 1: Consultoría -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 text-gray-900">Consultora Certificada</h3>
+                    <p class="text-gray-600 mb-4">
+                        Plan de negocios personalizado, creación de publicaciones, gerenciamiento y vendedor automático. Partners oficiales de Mercado Libre y Tienda Nube.
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li><i class="fas fa-check text-brand-blue mr-2"></i>Asesoramiento estratégico</li>
+                        <li><i class="fas fa-check text-brand-blue mr-2"></i>Integración de canales</li>
+                        <li><i class="fas fa-check text-brand-blue mr-2"></i>Automatización de ventas</li>
+                    </ul>
+                </div>
+                
+                <!-- Pilar 2: Almacenamiento -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-warehouse"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 text-gray-900">Almacenamiento Premium</h3>
+                    <p class="text-gray-600 mb-4">
+                        Depósito Clase AAA en Capital Federal. Servicio por pallet/estantería, desconsolidación y monitoreo 24/7.
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li><i class="fas fa-check text-brand-blue mr-2"></i>Infraestructura AAA</li>
+                        <li><i class="fas fa-check text-brand-blue mr-2"></i>Control 24/7</li>
+                        <li><i class="fas fa-check text-brand-blue mr-2"></i>Flexible y escalable</li>
+                    </ul>
+                </div>
+                
+                <!-- Pilar 3: Pre-Fulfillment -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-boxes"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 text-gray-900">Pre-Fulfillment</h3>
+                    <p class="text-gray-600 mb-4">
+                        Control de calidad, etiquetado, armado de kits, gestión de devoluciones y creación de contenido para ads.
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li><i class="fas fa-check text-brand-blue mr-2"></i>Control de calidad</li>
+                        <li><i class="fas fa-check text-brand-blue mr-2"></i>Personalización</li>
+                        <li><i class="fas fa-check text-brand-blue mr-2"></i>Contenido multimedia</li>
+                    </ul>
+                </div>
+                
+                <!-- Pilar 4: Fulfillment -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-box-open"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 text-gray-900">Fulfillment Integral</h3>
+                    <p class="text-gray-600 mb-4">
+                        Embalaje, etiquetado, tercerización de personal, extensión de corte de venta y control de stock online.
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li><i class="fas fa-check text-brand-blue mr-2"></i>Embalaje profesional</li>
+                        <li><i class="fas fa-check text-brand-blue mr-2"></i>Stock en tiempo real</li>
+                        <li><i class="fas fa-check text-brand-blue mr-2"></i>Personal especializado</li>
+                    </ul>
+                </div>
+                
+                <!-- Pilar 5: Logística -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 text-gray-900">Logística & Distribución</h3>
+                    <p class="text-gray-600 mb-4">
+                        Flota propia de +60 vehículos en AMBA, última milla, MEI, despachos nacionales y convenios con expresos.
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li><i class="fas fa-check text-brand-blue mr-2"></i>Flota propia</li>
+                        <li><i class="fas fa-check text-brand-blue mr-2"></i>Cobertura nacional</li>
+                        <li><i class="fas fa-check text-brand-blue mr-2"></i>Última milla garantizada</li>
+                    </ul>
+                </div>
+                
+                <!-- Pilar 6: Desarrollo Web -->
+                <a href="https://qedev.team" target="_blank" rel="noopener noreferrer" class="service-card border-brand-blue border-2 block group">
+                    <div class="service-icon bg-gradient-to-r from-brand-blue via-brand-blue to-blue-500">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 text-gray-900">Desarrollo Web & E-commerce</h3>
+                    <p class="text-gray-600 mb-4">
+                        <strong class="text-brand-blue">QEdev</strong> ofrece sistemas web a medida, webs de alto impacto y aplicaciones que potencian tu negocio digital.
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li><i class="fas fa-check text-brand-blue mr-2"></i>Sitios y aplicaciones web escalables y de alto rendimiento</li>
+                        <li><i class="fas fa-check text-brand-blue mr-2"></i>Dashboards y sistemas internos personalizados</li>
+                        <li><i class="fas fa-check text-brand-blue mr-2"></i>Integraciones por API con plataformas y herramientas logísticas</li>
+                    </ul>
+                    <div class="mt-6 inline-flex items-center gap-2 text-white font-bold px-5 py-3 rounded-full bg-brand-blue transition-transform duration-300 group-hover:translate-y-[-2px]">
+                        <span>Ir a qedev.team</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== INTEGRACIONES API ====== -->
+    <section id="integraciones" class="py-20 px-4 sm:px-6 lg:px-8 bg-black">
+        <div class="max-w-6xl mx-auto">
+            <div class="section-heading text-center mb-16">
+                <span class="inline-block px-4 py-2 bg-blue-100 text-brand-blue font-bold rounded-full text-sm mb-4">
+                    INTEGRACIONES
+                </span>
+                <h2 class="text-4xl lg:text-5xl font-black mb-6 text-gray-900">
+                    Conectamos tu operación
+                </h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Sistemas integrados que hablan entre sí para una operación sin fricciones
+                </p>
+            </div>
+            
+            <div class="integration-grid grid md:grid-cols-3 gap-8 items-center">
+                <div class="text-center">
+                    <div class="feature-panel p-8 mb-4 flex items-center justify-center min-h-32">
+                        <div>
+                            <img src="images/logo_lightdata.png" alt="LightData" class="integration-logo lightdata-logo mb-3">
+                            <p class="text-gray-400 text-sm">ERP & Gestión de Inventory</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="text-center">
+                    <div class="feature-panel p-8 mb-4 flex items-center justify-center min-h-32 text-white">
+                        <i class="fas fa-link text-5xl opacity-50"></i>
+                    </div>
+                    <p class="font-bold text-white">Integraciones API</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="feature-panel p-8 mb-4 flex items-center justify-center min-h-32">
+                        <div>
+                            <img src="images/image.png" alt="ZipNowa" class="integration-logo mb-3">
+                            <p class="text-gray-400 text-sm">Logística & Tracking</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-16 feature-panel p-8 border-l-4 border-brand-blue">
+                <h3 class="text-2xl font-bold text-gray-900 mb-4">
+                    <i class="fas fa-plug text-brand-blue mr-2"></i>Ecosistema conectado
+                </h3>
+                <p class="text-gray-300 text-lg">
+                    Desde tu tienda Mercado Libre o Tienda Nube, pasando por LightData para gestión de stock, hasta ZipNowa para logística, todo se sincroniza automáticamente. Tu información fluye sin necesidad de intervención manual.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== POR QUÉ ELEGIRNOS ====== -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
+        <div class="max-w-6xl mx-auto">
+            <div class="section-heading text-center mb-16">
+                <span class="inline-block px-4 py-2 bg-blue-100 text-brand-blue font-bold rounded-full text-sm mb-4">
+                    VENTAJAS COMPETITIVAS
+                </span>
+                <h2 class="text-4xl lg:text-5xl font-black mb-6 text-gray-900">
+                    Por qué elegirnos
+                </h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Cinco razones por las que somos tu socio ideal en e-commerce
+                </p>
+            </div>
+            
+            <div class="advantages-grid grid md:grid-cols-2 lg:grid-cols-5 gap-6">
+                <!-- Card 1 -->
+                <div class="service-card text-center">
+                    <div class="service-icon mx-auto">
+                        <i class="fas fa-clipboard-check"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2 text-gray-900">Consultoría Estratégica</h3>
+                    <p class="text-sm text-gray-600">
+                        Partners certificados de Mercado Libre y Tienda Nube con plan personalizado
+                    </p>
+                </div>
+                
+                <!-- Card 2 -->
+                <div class="service-card text-center">
+                    <div class="service-icon mx-auto">
+                        <i class="fas fa-warehouse"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2 text-gray-900">Infraestructura AAA</h3>
+                    <p class="text-sm text-gray-600">
+                        Depósito de clase mundial con control 24/7 en Capital Federal
+                    </p>
+                </div>
+                
+                <!-- Card 3 -->
+                <div class="service-card text-center">
+                    <div class="service-icon mx-auto">
+                        <i class="fas fa-boxes-stacked"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2 text-gray-900">Operación Ágil</h3>
+                    <p class="text-sm text-gray-600">
+                        Pre-fulfillment y fulfillment rápido sin perder calidad
+                    </p>
+                </div>
+                
+                <!-- Card 4 -->
+                <div class="service-card text-center">
+                    <div class="service-icon mx-auto">
+                        <i class="fas fa-truck-fast"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2 text-gray-900">Última Milla</h3>
+                    <p class="text-sm text-gray-600">
+                        +60 vehículos propios para entrega garantizada en AMBA
+                    </p>
+                </div>
+                
+                <!-- Card 5 -->
+                <div class="service-card text-center border-brand-blue border-2">
+                    <div class="service-icon mx-auto">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2 text-gray-900">Desarrollo Web</h3>
+                    <p class="text-sm text-gray-600">
+                        QEdev.team integrado para tu presencia digital premium
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== CASOS DE ÉXITO ====== -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <div class="section-heading text-center mb-16">
+                <span class="inline-block px-4 py-2 bg-blue-100 text-brand-blue font-bold rounded-full text-sm mb-4">
+                    TESTIMONIOS
+                </span>
+                <h2 class="text-4xl lg:text-5xl font-black mb-6 text-gray-900">
+                    Lo que dicen nuestros clientes
+                </h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Empresas que escalaron su e-commerce con ADND Group
+                </p>
+            </div>
+            
+            <div class="testimonials-grid grid md:grid-cols-3 gap-8">
+                <!-- Testimonio 1 -->
+                <div class="service-card">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-star brand-blue"></i>
+                        <i class="fas fa-star brand-blue"></i>
+                        <i class="fas fa-star brand-blue"></i>
+                        <i class="fas fa-star brand-blue"></i>
+                        <i class="fas fa-star brand-blue"></i>
+                    </div>
+                    <p class="text-gray-700 mb-4 italic">
+                        "ADND Group transformó nuestra operación. Pasamos de gestionar todo nosotros a confiar en verdaderos profesionales. El equipo es increíble."
+                    </p>
+                    <div class="font-bold text-gray-900">Juan García</div>
+                    <div class="text-sm text-gray-600">CEO, E-commerce Plus</div>
+                </div>
+                
+                <!-- Testimonio 2 -->
+                <div class="service-card">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-star brand-blue"></i>
+                        <i class="fas fa-star brand-blue"></i>
+                        <i class="fas fa-star brand-blue"></i>
+                        <i class="fas fa-star brand-blue"></i>
+                        <i class="fas fa-star brand-blue"></i>
+                    </div>
+                    <p class="text-gray-700 mb-4 italic">
+                        "La integración con nuestro sistema fue impecable. Hoy vemos toda la operación en tiempo real. Sin ADND, no hubiésemos crecido tanto."
+                    </p>
+                    <div class="font-bold text-gray-900">María López</div>
+                    <div class="text-sm text-gray-600">Directora de Logística</div>
+                </div>
+                
+                <!-- Testimonio 3 -->
+                <div class="service-card">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-star brand-blue"></i>
+                        <i class="fas fa-star brand-blue"></i>
+                        <i class="fas fa-star brand-blue"></i>
+                        <i class="fas fa-star brand-blue"></i>
+                        <i class="fas fa-star brand-blue"></i>
+                    </div>
+                    <p class="text-gray-700 mb-4 italic">
+                        "El equipo de ADND entiende el negocio. No solo prestan servicios, son aliados estratégicos. Recomendamos a todos nuestros colegas."
+                    </p>
+                    <div class="font-bold text-gray-900">Carlos Mendez</div>
+                    <div class="text-sm text-gray-600">Founder, Digital Store</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== CTA SECTION ====== -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-blue-900 to-brand-blue">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl lg:text-5xl font-black text-white mb-6">
+                ¿Listo para escalar?
+            </h2>
+            <p class="text-xl text-blue-100 mb-8">
+                Conversemos sobre cómo ADND Group puede transformar tu operación de e-commerce
+            </p>
+            <button onclick="scrollToContacto()" class="btn-primary">
+                <i class="fas fa-phone mr-2"></i> Solicita una consulta
+            </button>
+        </div>
+    </section>
+
+    <!-- ====== CONTACTO ====== -->
+    <section id="contacto" class="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <div class="section-heading text-center mb-16">
+                <span class="inline-block px-4 py-2 bg-blue-100 text-brand-blue font-bold rounded-full text-sm mb-4">
+                    CONTACTO
+                </span>
+                <h2 class="text-4xl lg:text-5xl font-black mb-6 text-gray-900">
+                    Hablemos
+                </h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Nuestro equipo está listo para ayudarte. Elige tu canal preferido
+                </p>
+            </div>
+            
+            <div class="contact-grid grid md:grid-cols-2 gap-12">
+                <!-- Contacto Info -->
+                <div class="space-y-8">
+                    <div class="contact-item flex items-start gap-6">
+                        <div class="flex-shrink-0">
+                            <div class="flex items-center justify-center h-14 w-14 rounded-lg bg-brand-blue text-white">
+                                <i class="fas fa-phone text-xl"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-gray-900 mb-1">Teléfono</h3>
+                            <p class="text-gray-600">+54 11 3232-0206</p>
+                            <p class="text-gray-600 text-sm">Lunes a viernes, 9:00 - 18:00 hs</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item flex items-start gap-6">
+                        <div class="flex-shrink-0">
+                            <div class="flex items-center justify-center h-14 w-14 rounded-lg bg-brand-blue text-white">
+                                <i class="fas fa-envelope text-xl"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-gray-900 mb-1">Email</h3>
+                            <p class="text-gray-600">ezequieladndgroup@gmail.com</p>
+                            <p class="text-gray-600 text-sm">Respondemos en menos de 2 horas</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item flex items-start gap-6">
+                        <div class="flex-shrink-0">
+                            <div class="flex items-center justify-center h-14 w-14 rounded-lg bg-brand-blue text-white">
+                                <i class="fas fa-whatsapp text-xl"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-gray-900 mb-1">WhatsApp</h3>
+                            <a href="https://wa.me/5491132320206" class="text-brand-blue font-semibold hover:underline">
+                                Enviar mensaje directo
+                            </a>
+                            <p class="text-gray-600 text-sm">Respuesta instantánea</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item flex items-start gap-6">
+                        <div class="flex-shrink-0">
+                            <div class="flex items-center justify-center h-14 w-14 rounded-lg bg-brand-blue text-white">
+                                <i class="fas fa-globe text-xl"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-gray-900 mb-1">Web</h3>
+                            <p class="text-gray-600">Acá vamos a poner la url cuando esté</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Contacto WhatsApp -->
+                <div class="service-card flex flex-col items-stretch justify-center min-h-full">
+                    <div class="text-center mb-8">
+                        <div class="inline-flex items-center justify-center w-20 h-20 rounded-3xl bg-brand-blue/15 border border-brand-blue/30 mb-5">
+                            <i class="fab fa-whatsapp text-4xl brand-blue"></i>
+                        </div>
+                        <h3 class="text-3xl font-black text-white mb-3">Contáctanos</h3>
+                        <p class="text-gray-400">
+                            Escríbenos por WhatsApp y te respondemos directo, sin formularios.
+                        </p>
+                    </div>
+
+                    <a href="https://wa.me/5491132320206?text=Hola%20ADND%20Group%2C%20quiero%20conocer%20m%C3%A1s%20sobre%20sus%20servicios" 
+                       target="_blank" 
+                       rel="noopener noreferrer"
+                       class="btn-primary w-full text-center text-lg py-4">
+                        <i class="fab fa-whatsapp text-2xl mr-2"></i> Contáctanos
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ====== FOOTER ====== -->
+    <footer class="bg-gray-900 text-gray-300 py-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto">
+            <div class="footer-grid grid md:grid-cols-4 gap-8 mb-12">
+                <div>
+                    <div class="flex items-center gap-2 mb-4">
+                        <img src="images/logo_white.png" alt="ADND Group" class="h-10 w-10 rounded-xl object-contain">
+                        <span class="font-bold text-white">ADND GROUP</span>
+                    </div>
+                    <p class="text-sm text-gray-400">
+                        Aceleradora de Negocios Digitales. La solución integral para tu e-commerce.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold text-white mb-4">Servicios</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#servicios" class="hover:text-brand-blue transition">Consultoría</a></li>
+                        <li><a href="#servicios" class="hover:text-brand-blue transition">Almacenamiento</a></li>
+                        <li><a href="#servicios" class="hover:text-brand-blue transition">Fulfillment</a></li>
+                        <li><a href="#servicios" class="hover:text-brand-blue transition">Logística</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold text-white mb-4">Empresa</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#nosotros" class="hover:text-brand-blue transition">Nosotros</a></li>
+                        <li><a href="#servicios" class="hover:text-brand-blue transition">Servicios</a></li>
+                        <li><a href="#integraciones" class="hover:text-brand-blue transition">Integraciones</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold text-white mb-4">Contacto</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li>+54 11 3232-0206</li>
+                        <li><a href="mailto:ezequieladndgroup@gmail.com" class="hover:text-brand-blue transition">ezequieladndgroup@gmail.com</a></li>
+                        <li><a href="#" class="hover:text-brand-blue transition">WhatsApp</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-sm text-gray-400">
+                        &copy; 2026 ADND Group. Todos los derechos reservados.
+                    </p>
+                    <p class="text-sm text-gray-400 mt-4 md:mt-0">
+                        Desarrollo Web por <a href="https://qedev.team" target="_blank" class="text-brand-blue hover:underline">QEdev
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ====== BOTÓN FLOTANTE WHATSAPP ====== -->
+    <a href="https://wa.me/5491132320206?text=Hola%20ADND%20Group%2C%20me%20interesa%20saber%20m%C3%A1s%20sobre%20sus%20servicios" 
+       target="_blank" 
+         class="sticky-cta bg-brand-blue hover:bg-brand-blue text-white rounded-full w-16 h-16 flex items-center justify-center shadow-lg transition-all duration-300 hover:scale-110"
+       title="Contactar por WhatsApp">
+        <i class="fab fa-whatsapp text-2xl"></i>
+    </a>
+
+    <!-- ====== SCRIPTS ====== -->
+    <script>
+        // Mobile Menu Toggle
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            const button = document.querySelector('.mobile-menu-button');
+            const isOpening = menu.classList.toggle('hidden') === false;
+
+            document.body.classList.toggle('menu-open', isOpening);
+            button.setAttribute('aria-expanded', String(isOpening));
+            button.setAttribute('aria-label', isOpening ? 'Cerrar menu' : 'Abrir menu');
+        }
+        
+        // Cerrar menú móvil al hacer click en un link
+        document.querySelectorAll('#mobileMenu a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('mobileMenu').classList.add('hidden');
+                document.body.classList.remove('menu-open');
+                const button = document.querySelector('.mobile-menu-button');
+                button.setAttribute('aria-expanded', 'false');
+                button.setAttribute('aria-label', 'Abrir menu');
+            });
+        });
+        
+        // Scroll suave a contacto
+        function scrollToContacto() {
+            const contactSection = document.getElementById('contacto');
+            contactSection.scrollIntoView({ behavior: 'smooth' });
+        }
+        
+        // Manejo del formulario de contacto
+        function handleContactSubmit(event) {
+            event.preventDefault();
+            
+            const form = event.target;
+            const formData = new FormData(form);
+            const data = {
+                name: formData.get('name'),
+                email: formData.get('email'),
+                company: formData.get('company'),
+                service: formData.get('service'),
+                message: formData.get('message')
+            };
+            
+            // Mostrar mensaje de éxito (en producción, enviar a servidor)
+            console.log('Datos del formulario:', data);
+            
+            // Crear mensaje para WhatsApp
+            const message = `Hola ADND Group!\n\nMe gustaría contactarlos sobre:\n\nNombre: ${data.name}\nEmail: ${data.email}\nEmpresa: ${data.company}\nServicio de interés: ${data.service}\nMensaje: ${data.message}`;
+            
+            const whatsappLink = `https://wa.me/5491132320206?text=${encodeURIComponent(message)}`;
+            
+            // Mostrar alerta y limpiar formulario
+            alert('¡Gracias por tu contacto! Te redirigiremos a WhatsApp para continuar la conversación.');
+            form.reset();
+            
+            // Abrir WhatsApp
+            window.open(whatsappLink, '_blank');
+        }
+        
+        // Animación fade-in al scroll
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                }
+            });
+        });
+        
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+        
+        // Navbar opacity en scroll
+        const navbar = document.querySelector('nav');
+        const stickyCta = document.querySelector('.sticky-cta');
+        const heroSection = document.querySelector('.hero-bg');
+
+        function updateScrollState() {
+            if (window.scrollY > 50) {
+                navbar.classList.add('shadow-lg');
+            } else {
+                navbar.classList.remove('shadow-lg');
+            }
+
+            if (stickyCta && heroSection) {
+                const showAfter = heroSection.offsetHeight * 0.72;
+                stickyCta.classList.toggle('is-visible', window.innerWidth >= 768 || window.scrollY > showAfter);
+            }
+        }
+
+        updateScrollState();
+        window.addEventListener('scroll', updateScrollState, { passive: true });
+        window.addEventListener('resize', updateScrollState);
+    </script>
+</body>
+</html>
