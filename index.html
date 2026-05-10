@@ -68,7 +68,7 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:wght@700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
     
     <!-- Font Awesome para iconos -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -282,8 +282,11 @@
         }
 
         .hero-content h1 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 800;
             font-size: clamp(2.4rem, 8vw, 4rem) !important;
-            line-height: 1.02 !important;
+            line-height: 1.05 !important;
+            letter-spacing: 0;
             text-wrap: balance;
         }
 
@@ -398,6 +401,157 @@
         .service-card p,
         .service-card li {
             line-height: 1.6;
+        }
+
+        .pillar-grid .service-card {
+            min-height: clamp(26rem, 34vw, 30rem);
+            padding: 0;
+            border: 0;
+            background: transparent;
+            box-shadow: none;
+            cursor: pointer;
+            perspective: 1200px;
+            overflow: visible;
+        }
+
+        .pillar-grid .service-card:hover {
+            transform: none;
+            border-color: transparent;
+            background: transparent;
+        }
+
+        .service-flip-inner {
+            position: relative;
+            height: 100%;
+            min-height: inherit;
+            transform-style: preserve-3d;
+            transition: transform 680ms cubic-bezier(0.2, 0.72, 0.2, 1);
+        }
+
+        .service-flip-card.is-flipped .service-flip-inner {
+            transform: rotateY(180deg);
+        }
+
+        @media (hover: hover) and (pointer: fine) {
+            .service-flip-card:hover .service-flip-inner {
+                transform: rotateY(180deg);
+            }
+        }
+
+        .service-flip-card:focus-visible {
+            outline: 3px solid rgba(0, 144, 255, 0.65);
+            outline-offset: 4px;
+        }
+
+        .service-flip-face {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid var(--border);
+            border-radius: 1.25rem;
+            background:
+                linear-gradient(145deg, rgba(255, 255, 255, 0.09), rgba(255, 255, 255, 0.035)),
+                var(--surface);
+            backface-visibility: hidden;
+            -webkit-backface-visibility: hidden;
+            backdrop-filter: blur(22px);
+            box-shadow: 0 18px 54px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        .service-flip-front {
+            align-items: center;
+            justify-content: center;
+            gap: 1.25rem;
+            padding: clamp(1.5rem, 3vw, 2.25rem);
+            text-align: center;
+        }
+
+        .service-flip-front::after {
+            content: '';
+            position: absolute;
+            inset: auto 18% 14% 18%;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(0, 144, 255, 0.62), transparent);
+        }
+
+        .service-flip-front .service-icon {
+            width: clamp(4.4rem, 8vw, 5.6rem);
+            height: clamp(4.4rem, 8vw, 5.6rem);
+            margin-bottom: 0;
+            border-radius: 1.35rem;
+            font-size: clamp(1.55rem, 3vw, 2rem);
+            box-shadow: 0 20px 42px rgba(0, 144, 255, 0.28);
+        }
+
+        .service-icon-img {
+            width: 72%;
+            height: 72%;
+            object-fit: contain;
+        }
+
+        .service-flip-front h3 {
+            max-width: 16rem;
+            margin: 0;
+            color: #ffffff;
+        }
+
+        .service-flip-back {
+            justify-content: center;
+            gap: 0.95rem;
+            padding: clamp(1.2rem, 2.3vw, 1.75rem);
+            transform: rotateY(180deg);
+            border-color: rgba(0, 144, 255, 0.34);
+            background:
+                radial-gradient(circle at top left, rgba(0, 144, 255, 0.22), transparent 44%),
+                linear-gradient(145deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.035)),
+                #080808;
+            overflow: hidden;
+        }
+
+        .service-flip-back h3 {
+            margin: 0;
+            color: #ffffff;
+        }
+
+        .service-flip-back p,
+        .service-flip-back li {
+            color: rgba(255, 255, 255, 0.76);
+        }
+
+        .service-flip-back p {
+            margin: 0;
+        }
+
+        .service-flip-back ul {
+            margin: 0;
+        }
+
+        .service-flip-back a {
+            align-self: flex-start;
+        }
+
+        .service-flip-back .service-icon {
+            display: none;
+        }
+
+        .service-card-qedev .service-flip-back {
+            gap: 0.72rem;
+            padding: clamp(1rem, 1.9vw, 1.35rem);
+        }
+
+        .service-card-qedev .service-flip-back h3 {
+            font-size: clamp(1.35rem, 2vw, 1.5rem) !important;
+        }
+
+        .service-card-qedev .service-flip-back p,
+        .service-card-qedev .service-flip-back li {
+            line-height: 1.45;
+        }
+
+        .service-card-qedev .service-flip-back ul {
+            font-size: 0.9rem;
         }
         
         .fade-in {
@@ -802,6 +956,63 @@
                 gap: 1.25rem;
             }
 
+            .pillar-grid .service-card {
+                min-height: 0;
+                padding: clamp(1.25rem, 3vw, 2rem);
+                border: 1px solid var(--border);
+                border-radius: 1.25rem;
+                background: var(--surface);
+                box-shadow: 0 16px 44px rgba(0, 0, 0, 0.22);
+                cursor: default;
+                perspective: none;
+                overflow: hidden;
+            }
+
+            .service-flip-inner {
+                position: static;
+                height: auto;
+                min-height: 0;
+                transform: none !important;
+                transition: none;
+            }
+
+            .service-flip-front {
+                display: none;
+            }
+
+            .service-flip-face,
+            .service-flip-back {
+                position: static;
+                inset: auto;
+                display: flex;
+                border: 0;
+                border-radius: 0;
+                background: transparent;
+                box-shadow: none;
+                backdrop-filter: none;
+                transform: none;
+                overflow: visible;
+            }
+
+            .service-flip-back {
+                justify-content: flex-start;
+                gap: 0;
+                padding: 0;
+            }
+
+            .service-flip-back .service-icon {
+                display: flex;
+                margin-bottom: 1rem;
+            }
+
+            .service-flip-back h3 {
+                margin-bottom: 0.75rem;
+            }
+
+            .service-flip-back p {
+                margin-bottom: 1rem;
+            }
+
             .service-card:hover,
             .btn-primary:hover,
             .btn-secondary:hover {
@@ -928,7 +1139,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="nav-inner flex justify-between items-center h-20">
                 <div class="flex items-center gap-3">
-                    <img src="images/logo_white.png" alt="ADND Group" class="h-11 w-11 rounded-xl object-contain">
+                    <img src="images/logo_blue.png" alt="ADND Group" class="h-11 w-11 rounded-xl object-contain">
                     <span class="font-bold text-xl hidden sm:inline tracking-[0.22em]">ADND GROUP</span>
                 </div>
                 
@@ -1116,104 +1327,164 @@
             
             <div class="pillar-grid">
                 <!-- Pilar 1: Consultoría -->
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-lightbulb"></i>
+                <div class="service-card service-flip-card" aria-label="Ver detalles de Consultora Certificada">
+                    <div class="service-flip-inner">
+                        <div class="service-flip-face service-flip-front">
+                            <div class="service-icon">
+                                <img src="images/logo_engenieria.png" alt="" class="service-icon-img">
+                            </div>
+                            <h3 class="text-2xl font-bold text-gray-900">Consultora Certificada</h3>
+                        </div>
+                        <div class="service-flip-face service-flip-back">
+                            <div class="service-icon">
+                                <img src="images/logo_engenieria.png" alt="" class="service-icon-img">
+                            </div>
+                            <h3 class="text-2xl font-bold text-gray-900">Consultora Certificada</h3>
+                            <p class="text-gray-600">
+                                Plan de negocios personalizado, creación de publicaciones, gerenciamiento y vendedor automático. Partners oficiales de Mercado Libre y Tienda Nube.
+                            </p>
+                            <ul class="space-y-2 text-sm text-gray-600">
+                                <li><i class="fas fa-check text-brand-blue mr-2"></i>Asesoramiento estratégico</li>
+                                <li><i class="fas fa-check text-brand-blue mr-2"></i>Integración de canales</li>
+                                <li><i class="fas fa-check text-brand-blue mr-2"></i>Automatización de ventas</li>
+                            </ul>
+                        </div>
                     </div>
-                    <h3 class="text-2xl font-bold mb-3 text-gray-900">Consultora Certificada</h3>
-                    <p class="text-gray-600 mb-4">
-                        Plan de negocios personalizado, creación de publicaciones, gerenciamiento y vendedor automático. Partners oficiales de Mercado Libre y Tienda Nube.
-                    </p>
-                    <ul class="space-y-2 text-sm text-gray-600">
-                        <li><i class="fas fa-check text-brand-blue mr-2"></i>Asesoramiento estratégico</li>
-                        <li><i class="fas fa-check text-brand-blue mr-2"></i>Integración de canales</li>
-                        <li><i class="fas fa-check text-brand-blue mr-2"></i>Automatización de ventas</li>
-                    </ul>
                 </div>
                 
                 <!-- Pilar 2: Almacenamiento -->
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-warehouse"></i>
+                <div class="service-card service-flip-card" aria-label="Ver detalles de Almacenamiento Premium">
+                    <div class="service-flip-inner">
+                        <div class="service-flip-face service-flip-front">
+                            <div class="service-icon">
+                                <i class="fas fa-warehouse"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-gray-900">Almacenamiento Premium</h3>
+                        </div>
+                        <div class="service-flip-face service-flip-back">
+                            <div class="service-icon">
+                                <i class="fas fa-warehouse"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-gray-900">Almacenamiento Premium</h3>
+                            <p class="text-gray-600">
+                                Depósito Clase AAA en Capital Federal. Servicio por pallet/estantería, desconsolidación y monitoreo 24/7.
+                            </p>
+                            <ul class="space-y-2 text-sm text-gray-600">
+                                <li><i class="fas fa-check text-brand-blue mr-2"></i>Infraestructura AAA</li>
+                                <li><i class="fas fa-check text-brand-blue mr-2"></i>Control 24/7</li>
+                                <li><i class="fas fa-check text-brand-blue mr-2"></i>Flexible y escalable</li>
+                            </ul>
+                        </div>
                     </div>
-                    <h3 class="text-2xl font-bold mb-3 text-gray-900">Almacenamiento Premium</h3>
-                    <p class="text-gray-600 mb-4">
-                        Depósito Clase AAA en Capital Federal. Servicio por pallet/estantería, desconsolidación y monitoreo 24/7.
-                    </p>
-                    <ul class="space-y-2 text-sm text-gray-600">
-                        <li><i class="fas fa-check text-brand-blue mr-2"></i>Infraestructura AAA</li>
-                        <li><i class="fas fa-check text-brand-blue mr-2"></i>Control 24/7</li>
-                        <li><i class="fas fa-check text-brand-blue mr-2"></i>Flexible y escalable</li>
-                    </ul>
                 </div>
                 
                 <!-- Pilar 3: Pre-Fulfillment -->
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-boxes"></i>
+                <div class="service-card service-flip-card" aria-label="Ver detalles de Pre-Fulfillment">
+                    <div class="service-flip-inner">
+                        <div class="service-flip-face service-flip-front">
+                            <div class="service-icon">
+                                <i class="fas fa-boxes"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-gray-900">Pre-Fulfillment</h3>
+                        </div>
+                        <div class="service-flip-face service-flip-back">
+                            <div class="service-icon">
+                                <i class="fas fa-boxes"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-gray-900">Pre-Fulfillment</h3>
+                            <p class="text-gray-600">
+                                Control de calidad, etiquetado, armado de kits, gestión de devoluciones y creación de contenido para ads.
+                            </p>
+                            <ul class="space-y-2 text-sm text-gray-600">
+                                <li><i class="fas fa-check text-brand-blue mr-2"></i>Control de calidad</li>
+                                <li><i class="fas fa-check text-brand-blue mr-2"></i>Personalización</li>
+                                <li><i class="fas fa-check text-brand-blue mr-2"></i>Contenido multimedia</li>
+                            </ul>
+                        </div>
                     </div>
-                    <h3 class="text-2xl font-bold mb-3 text-gray-900">Pre-Fulfillment</h3>
-                    <p class="text-gray-600 mb-4">
-                        Control de calidad, etiquetado, armado de kits, gestión de devoluciones y creación de contenido para ads.
-                    </p>
-                    <ul class="space-y-2 text-sm text-gray-600">
-                        <li><i class="fas fa-check text-brand-blue mr-2"></i>Control de calidad</li>
-                        <li><i class="fas fa-check text-brand-blue mr-2"></i>Personalización</li>
-                        <li><i class="fas fa-check text-brand-blue mr-2"></i>Contenido multimedia</li>
-                    </ul>
                 </div>
                 
                 <!-- Pilar 4: Fulfillment -->
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-box-open"></i>
+                <div class="service-card service-flip-card" aria-label="Ver detalles de Fulfillment Integral">
+                    <div class="service-flip-inner">
+                        <div class="service-flip-face service-flip-front">
+                            <div class="service-icon">
+                                <i class="fas fa-box-open"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-gray-900">Fulfillment Integral</h3>
+                        </div>
+                        <div class="service-flip-face service-flip-back">
+                            <div class="service-icon">
+                                <i class="fas fa-box-open"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-gray-900">Fulfillment Integral</h3>
+                            <p class="text-gray-600">
+                                Embalaje, etiquetado, tercerización de personal, extensión de corte de venta y control de stock online.
+                            </p>
+                            <ul class="space-y-2 text-sm text-gray-600">
+                                <li><i class="fas fa-check text-brand-blue mr-2"></i>Embalaje profesional</li>
+                                <li><i class="fas fa-check text-brand-blue mr-2"></i>Stock en tiempo real</li>
+                                <li><i class="fas fa-check text-brand-blue mr-2"></i>Personal especializado</li>
+                            </ul>
+                        </div>
                     </div>
-                    <h3 class="text-2xl font-bold mb-3 text-gray-900">Fulfillment Integral</h3>
-                    <p class="text-gray-600 mb-4">
-                        Embalaje, etiquetado, tercerización de personal, extensión de corte de venta y control de stock online.
-                    </p>
-                    <ul class="space-y-2 text-sm text-gray-600">
-                        <li><i class="fas fa-check text-brand-blue mr-2"></i>Embalaje profesional</li>
-                        <li><i class="fas fa-check text-brand-blue mr-2"></i>Stock en tiempo real</li>
-                        <li><i class="fas fa-check text-brand-blue mr-2"></i>Personal especializado</li>
-                    </ul>
                 </div>
                 
                 <!-- Pilar 5: Logística -->
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-truck"></i>
+                <div class="service-card service-flip-card" aria-label="Ver detalles de Logística y Distribución">
+                    <div class="service-flip-inner">
+                        <div class="service-flip-face service-flip-front">
+                            <div class="service-icon">
+                                <i class="fas fa-truck"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-gray-900">Logística & Distribución</h3>
+                        </div>
+                        <div class="service-flip-face service-flip-back">
+                            <div class="service-icon">
+                                <i class="fas fa-truck"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-gray-900">Logística & Distribución</h3>
+                            <p class="text-gray-600">
+                                Flota propia de +60 vehículos en AMBA, última milla, MEI, despachos nacionales y convenios con expresos.
+                            </p>
+                            <ul class="space-y-2 text-sm text-gray-600">
+                                <li><i class="fas fa-check text-brand-blue mr-2"></i>Flota propia</li>
+                                <li><i class="fas fa-check text-brand-blue mr-2"></i>Cobertura nacional</li>
+                                <li><i class="fas fa-check text-brand-blue mr-2"></i>Última milla garantizada</li>
+                            </ul>
+                        </div>
                     </div>
-                    <h3 class="text-2xl font-bold mb-3 text-gray-900">Logística & Distribución</h3>
-                    <p class="text-gray-600 mb-4">
-                        Flota propia de +60 vehículos en AMBA, última milla, MEI, despachos nacionales y convenios con expresos.
-                    </p>
-                    <ul class="space-y-2 text-sm text-gray-600">
-                        <li><i class="fas fa-check text-brand-blue mr-2"></i>Flota propia</li>
-                        <li><i class="fas fa-check text-brand-blue mr-2"></i>Cobertura nacional</li>
-                        <li><i class="fas fa-check text-brand-blue mr-2"></i>Última milla garantizada</li>
-                    </ul>
                 </div>
                 
                 <!-- Pilar 6: Desarrollo Web -->
-                <a href="https://qedev.team" target="_blank" rel="noopener noreferrer" class="service-card border-brand-blue border-2 block group">
-                    <div class="service-icon bg-gradient-to-r from-brand-blue via-brand-blue to-blue-500">
-                        <i class="fas fa-code"></i>
+                <div class="service-card service-flip-card service-card-qedev" aria-label="Ver detalles de Desarrollo Web & E-commerce">
+                    <div class="service-flip-inner">
+                        <div class="service-flip-face service-flip-front">
+                            <div class="service-icon bg-gradient-to-r from-brand-blue via-brand-blue to-blue-500">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-gray-900">Desarrollo Web & E-commerce</h3>
+                        </div>
+                        <div class="service-flip-face service-flip-back">
+                            <div class="service-icon bg-gradient-to-r from-brand-blue via-brand-blue to-blue-500">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-gray-900">Desarrollo Web & E-commerce</h3>
+                            <p class="text-gray-600">
+                                <strong class="text-brand-blue">QEdev</strong> ofrece sistemas web a medida, webs de alto impacto y aplicaciones que potencian tu negocio digital.
+                            </p>
+                            <ul class="space-y-2 text-sm text-gray-600">
+                                <li><i class="fas fa-check text-brand-blue mr-2"></i>Sitios y aplicaciones web escalables y de alto rendimiento</li>
+                                <li><i class="fas fa-check text-brand-blue mr-2"></i>Dashboards y sistemas internos personalizados</li>
+                                <li><i class="fas fa-check text-brand-blue mr-2"></i>Integraciones por API con plataformas y herramientas logísticas</li>
+                            </ul>
+                            <a href="https://qedev.team" target="_blank" rel="noopener noreferrer" class="mt-2 inline-flex items-center gap-2 text-white font-bold px-5 py-3 rounded-full bg-brand-blue transition-transform duration-300 hover:translate-y-[-2px]">
+                                <span>Ir a qedev.team</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
                     </div>
-                    <h3 class="text-2xl font-bold mb-3 text-gray-900">Desarrollo Web & E-commerce</h3>
-                    <p class="text-gray-600 mb-4">
-                        <strong class="text-brand-blue">QEdev</strong> ofrece sistemas web a medida, webs de alto impacto y aplicaciones que potencian tu negocio digital.
-                    </p>
-                    <ul class="space-y-2 text-sm text-gray-600">
-                        <li><i class="fas fa-check text-brand-blue mr-2"></i>Sitios y aplicaciones web escalables y de alto rendimiento</li>
-                        <li><i class="fas fa-check text-brand-blue mr-2"></i>Dashboards y sistemas internos personalizados</li>
-                        <li><i class="fas fa-check text-brand-blue mr-2"></i>Integraciones por API con plataformas y herramientas logísticas</li>
-                    </ul>
-                    <div class="mt-6 inline-flex items-center gap-2 text-white font-bold px-5 py-3 rounded-full bg-brand-blue transition-transform duration-300 group-hover:translate-y-[-2px]">
-                        <span>Ir a qedev.team</span>
-                        <i class="fas fa-arrow-right"></i>
-                    </div>
-                </a>
+                </div>
             </div>
         </div>
     </section>
@@ -1615,6 +1886,55 @@
         function scrollToContacto() {
             const contactSection = document.getElementById('contacto');
             contactSection.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        const serviceFlipCards = document.querySelectorAll('#servicios .service-flip-card');
+        const canHoverServices = window.matchMedia('(hover: hover) and (pointer: fine)');
+
+        function syncServiceCardInteraction() {
+            serviceFlipCards.forEach(card => {
+                card.classList.remove('is-flipped');
+
+                if (canHoverServices.matches) {
+                    card.setAttribute('role', 'button');
+                    card.setAttribute('tabindex', '0');
+                    card.setAttribute('aria-pressed', 'false');
+                } else {
+                    card.removeAttribute('role');
+                    card.removeAttribute('tabindex');
+                    card.removeAttribute('aria-pressed');
+                }
+            });
+        }
+
+        serviceFlipCards.forEach(card => {
+            card.addEventListener('click', event => {
+                if (!event.target.closest('a')) {
+                    card.blur();
+                }
+            });
+
+            card.addEventListener('keydown', event => {
+                if (!canHoverServices.matches) {
+                    return;
+                }
+
+                if (event.key !== 'Enter' && event.key !== ' ') {
+                    return;
+                }
+
+                event.preventDefault();
+                card.classList.toggle('is-flipped');
+                card.setAttribute('aria-pressed', String(card.classList.contains('is-flipped')));
+            });
+        });
+
+        syncServiceCardInteraction();
+
+        if (typeof canHoverServices.addEventListener === 'function') {
+            canHoverServices.addEventListener('change', syncServiceCardInteraction);
+        } else if (typeof canHoverServices.addListener === 'function') {
+            canHoverServices.addListener(syncServiceCardInteraction);
         }
         
         // Manejo del formulario de contacto
